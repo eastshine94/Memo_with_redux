@@ -4,7 +4,7 @@ import { Container } from '../styles/BaseStyle';
 import { MemoHeader, MemoMain, MemoSide } from '../components/memo';
 
 const Wrapper = styled.main`
-    margin-top: 20px;
+    margin: 20px 5px;
 `;
 
 const MemoContentWrapper = styled(Container)`
