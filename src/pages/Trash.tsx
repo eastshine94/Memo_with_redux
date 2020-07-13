@@ -1,16 +1,17 @@
 import React from 'react';
 import { Layout, Container } from '../styles/BaseStyle';
-import { MemoMain, MemoSide } from '../components/memo';
+import { TrashMain, TrashSide } from '../components/trash';
 
-const Memo: React.FC = () => {
+
+const Trash: React.FC = () => {
     return(
         <Layout>
             <Container>
-                <MemoSide/>
-                <MemoMain/>
+                <TrashSide/>
+                <TrashMain/>
             </Container>
         </Layout>
     );
 }
 
-export default Memo;
+export default Trash;
