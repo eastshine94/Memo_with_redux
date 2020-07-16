@@ -33,6 +33,9 @@ export const Side = styled.aside`
             padding: 10px 5px;
             font-weight: bold;
             font-weight: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             &:hover {
                 color: #000000;
                 background-color: #ecf0f1;

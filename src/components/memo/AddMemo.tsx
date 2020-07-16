@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Button } from '../base';
 import { PAGE_PATHS } from '../../constants';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     & input, textarea {
         width : 97%;
         border: 1px solid #ccc;

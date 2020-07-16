@@ -33,7 +33,7 @@ const MemoItem: React.FC<MemoItemProps> = ({id, title}) => {
 }
 
 const MemoSide: React.FC<MemoSideProps> = ({memoList}) => {
-    const renderList = memoList.map(val => <MemoItem id={val.id} title={val.title}/>)
+    const renderList = memoList.map(val => <MemoItem id={val.id} title={val.title} key={val.id}/>)
     return (
         <Side>
             <SideBackBtn><Link to={PAGE_PATHS.HOME}>{`<`}</Link></SideBackBtn>
