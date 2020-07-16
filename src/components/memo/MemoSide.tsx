@@ -1,25 +1,45 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { NavLink, Link } from 'react-router-dom';
 import { Side, SideBackBtn } from '../../styles/BaseStyle';
 import { PAGE_PATHS } from '../../constants';
+import { Memo } from '../../types/memo';
 
 
-const MemoSide: React.FC = () => {
+
+const Menu = styled(NavLink)`
+    width: 100%;
+    display: inline-block;
+    &.active {
+        background: #948acf;
+        color: #fff;
+        pointer-events: none;
+    }
+`;
+
+interface MemoItemProps {
+    id: number;
+    title: string;
+}
+
+interface MemoSideProps {
+    memoList: Array<Memo>;
+}
+
+const MemoItem: React.FC<MemoItemProps> = ({id, title}) => {
+    return(
+        <Menu activeClassName="active" to={`${PAGE_PATHS.MEMO}/${id}`}><li>{title}</li></Menu>
+    )
+}
+
+const MemoSide: React.FC<MemoSideProps> = ({memoList}) => {
+    const renderList = memoList.map(val => <MemoItem id={val.id} title={val.title}/>)
     return (
         <Side>
             <SideBackBtn><Link to={PAGE_PATHS.HOME}>{`<`}</Link></SideBackBtn>
             <h2>메모</h2>
             <ul>
-                <li>첫번째 메모입니다.</li>
-                <li>두번째 메모입니다.</li>
-                <li>세번째 메모입니다.</li>
-                <li>첫번째 메모입니다.</li>
-                <li>두번째 메모입니다.</li>
-                <li>세번째 메모입니다.</li>
-                <li>첫번째 메모입니다.</li>
-                <li>두번째 메모입니다.</li>
-                <li>세번째 메모입니다.</li>
-                <li>세번째 메모입니다.</li>
+                { renderList }
             </ul>
         </Side>
     )

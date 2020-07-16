@@ -25,21 +25,18 @@ export const Side = styled.aside`
         font-weight: bold;
         padding: 10px 5px;
     }
-    & ul {  
+    & ul {
+        border-top: 1px solid #ccc;
+        margin-bottom : 5px;
         & li {
             border-bottom: 1px solid #ccc;
             padding: 10px 5px;
             font-weight: bold;
             font-weight: 15px;
             &:hover {
+                color: #000000;
                 background-color: #ecf0f1;
                 cursor: pointer;
-            }
-            &:first-child {
-                border-top: 1px solid #ccc;
-            }
-            &:last-child{
-                margin-bottom : 5px;
             }
         }
     }

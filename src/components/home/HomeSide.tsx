@@ -7,7 +7,7 @@ import { PAGE_PATHS } from '../../constants';
 const Menu = styled(NavLink)`
     width: 100%;
     display: inline-block;
-    & .active {
+    &.active {
         background: red;
     }
 `;
