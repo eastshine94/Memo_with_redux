@@ -1,15 +1,12 @@
 import React from 'react';
-import { Layout, Container } from '../styles/BaseStyle';
-import { TrashMain, TrashSide } from '../components/trash';
+import { Layout } from '../styles/BaseStyle';
+import { TrashContainer } from '../containers/trash';
 
 
 const Trash: React.FC = () => {
     return(
         <Layout>
-            <Container>
-                <TrashSide/>
-                <TrashMain/>
-            </Container>
+            <TrashContainer/>
         </Layout>
     );
 }

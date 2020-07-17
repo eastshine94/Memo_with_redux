@@ -1,11 +1,11 @@
 import React from 'react';
 import { Layout } from '../styles/BaseStyle';
-import { MemoSideContainer } from '../containers/memo';
+import { MemoContainer } from '../containers/memo';
 
 const Memo: React.FC = () => {
     return(
         <Layout>
-            <MemoSideContainer/>
+            <MemoContainer/>
         </Layout>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from '../base'
+import { Button } from '../base';
 const Wrapper = styled.section`
     & div {
         white-space: pre;
@@ -10,14 +10,14 @@ const Wrapper = styled.section`
 interface Props {
     createdAt: number;
     content: string;
-    onDelete(): void;
+    onRestore(): void;
 }
 
-const MemoContent: React.FC<Props> = ({createdAt, content, onDelete}) => {
+const TrashContent: React.FC<Props> = ({createdAt, content, onRestore}) => {
     const createdAtToDate = new Date(createdAt).toLocaleString();
     return(
         <React.Fragment>
-            <Button onClick={onDelete}>삭제</Button>
+            <Button onClick={onRestore}>복구</Button>
             <Wrapper>
                 <div>{createdAtToDate}</div>
                 <div>{content}</div>
@@ -26,4 +26,4 @@ const MemoContent: React.FC<Props> = ({createdAt, content, onDelete}) => {
     )
 }
 
-export default MemoContent;
+export default TrashContent;
