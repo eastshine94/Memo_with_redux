@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Memo_with_Redux/static/js/main.e18e2f6a.chunk.js",
+    "main.js.map": "/Memo_with_Redux/static/js/main.e18e2f6a.chunk.js.map",
+    "runtime-main.js": "/Memo_with_Redux/static/js/runtime-main.7b53fc28.js",
+    "runtime-main.js.map": "/Memo_with_Redux/static/js/runtime-main.7b53fc28.js.map",
+    "static/js/2.99bfb56a.chunk.js": "/Memo_with_Redux/static/js/2.99bfb56a.chunk.js",
+    "static/js/2.99bfb56a.chunk.js.map": "/Memo_with_Redux/static/js/2.99bfb56a.chunk.js.map",
+    "index.html": "/Memo_with_Redux/index.html",
+    "precache-manifest.98c4430241fd669091de4beea54a5333.js": "/Memo_with_Redux/precache-manifest.98c4430241fd669091de4beea54a5333.js",
+    "service-worker.js": "/Memo_with_Redux/service-worker.js",
+    "static/js/2.99bfb56a.chunk.js.LICENSE.txt": "/Memo_with_Redux/static/js/2.99bfb56a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b53fc28.js",
+    "static/js/2.99bfb56a.chunk.js",
+    "static/js/main.e18e2f6a.chunk.js"
+  ]
+}
