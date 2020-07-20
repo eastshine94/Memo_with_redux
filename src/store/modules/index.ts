@@ -5,6 +5,7 @@ export interface RootState {
     memo: MemoState;
 }
 
-export default combineReducers({
+const rootReducer = () => combineReducers({
     memo,
-})
+  })
+export default rootReducer;
